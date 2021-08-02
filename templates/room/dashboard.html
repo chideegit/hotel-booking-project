@@ -1,0 +1,33 @@
+{% extends 'room/base.html' %}
+
+{% block content %}
+<div class="row">
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">Number of Rooms</h5>
+            <p class="card-text">{{obj}}</p>
+        </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">Booked Rooms</h5>
+            <p class="card-text">{{obj1}}</p>
+        </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">Checked Out Guest</h5>
+            <p class="card-text">{{obj2}}</p>
+        </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">Free Rooms</h5>
+            <p class="card-text">{{obj3}}</p>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}

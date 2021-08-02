@@ -1,0 +1,32 @@
+{% extends 'room/base.html' %}
+
+{% block content %}
+
+<div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Guest Name</th>
+                <th scope="col">Room</th>
+                <th scope="col">Payment</th>
+                <th scope="col">Booking Date</th>
+                <th scope="col">Check Out</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% if obj %}
+            {% for o in obj %}
+            <tr>
+                <td>{{o.guest_name}}</td>
+                <td>{{o.room}}</td>
+                <td>{{o.payment}}</td>
+                <td>{{o.date_booked}}</td>
+                <td>{{o.check_out_time}}</td>
+            </tr>
+            {% endfor %}
+            {% endif %}
+        </tbody>
+    </table>
+</div>
+
+{% endblock content %}
